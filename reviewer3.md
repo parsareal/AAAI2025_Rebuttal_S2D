@@ -1,4 +1,4 @@
-**1. Multi-Target Compatibility of Speculative Decoding**
+## **1. Multi-Target Compatibility of Speculative Decoding**
 
 The reviewer raises a concern that the original speculative decoding can already be applied to multiple target models with a single draft model. While this is technically true, the key contribution of our work lies in addressing the practical challenges associated with multi-target setups in speculative decoding. For example using a single draft model for different targets (with different sizes) has no adaptation mechanism between the single draft and the targets; however, in our solution the draft model contains some sub-models and we can adaptively switch between them to serve different targets properly. More specifically:
 
@@ -20,7 +20,7 @@ By dynamically selecting tokens from sub-models within the draft model, we ensur
 
 This combination allows our method to seamlessly serve multiple target models, reducing both training and deployment overheads compared to conventional speculative decoding setups.
 
-**2. Novelty of Sorted Fine-Tuning (SoFT) in Speculative Decoding**
+## **2. Novelty of Sorted Fine-Tuning (SoFT) in Speculative Decoding**
 
 The reviewer suggests that SoFT is merely an application of existing learning techniques and does not involve new ideas specific to speculative decoding. While we acknowledge that many-in-one learning principles underlie SoFT, our contribution lies in its novel application and integration within the speculative decoding paradigm:
 
@@ -31,7 +31,7 @@ SoFT introduces a hierarchical structure within the draft model, enabling early 
 - *Integration with Adaptive Decoding:*
 SoFT is uniquely integrated with our confidence-based adaptive selection mechanism, enabling dynamic switching between sub-models based on token prediction confidence. This synergy is specifically designed to enhance both the speed and accuracy of speculative decoding in multi-target setups.
 
-**3. Confidence-Based Draft Selection and Target Model Distribution Guarantees**
+## **3. Confidence-Based Draft Selection and Target Model Distribution Guarantees**
 
 We appreciate the concern regarding the guarantees of sampling from the target model’s distribution when employing confidence-based selection for drafts. Our method ensures that:
 
@@ -41,7 +41,7 @@ Similar to the original speculative decoding algorithm, the tokens generated dur
 ***Adaptive Drafting Efficiency:***
 By leveraging confidence scores, our approach dynamically selects the most appropriate sub-model within the draft framework to balance accuracy and latency. This mechanism does not bypass or override the target model's verification step but instead optimizes the intermediate draft generation process. Thus, the guarantees provided by speculative decoding remain intact, and our method achieves improved efficiency without sacrificing correctness.
 
-**4. Selection and Evaluation of Experimental Baselines**
+## **4. Selection and Evaluation of Experimental Baselines**
 
 We appreciate the reviewer’s observation regarding the inclusion of baselines. Our experimental setup was designed to include a range of target-dependent and target-independent methods, ensuring a comprehensive evaluation. Below, we address the baselines used in detail and explain how they relate to the proposed method:
 
@@ -74,7 +74,7 @@ Table: Speedup and MAT results on the MT-Bench dataset. Our SoFT training was in
 
 The SoFT + S2D draft consistently outperforms the pre-trained Vicuna 160m model in terms of speedup, demonstrating the value of fine-tuning for speculative decoding tasks. Intermediate layer drafts (e.g., SoFT L6, SoFT L9) offer competitive performance, showing the effectiveness of early-exit mechanisms.
 
-**5. Summary of Response**
+## **5. Summary of Response**
 
 In response to the reviewer’s comments, we addressed key concerns regarding the compatibility, novelty, and experimental evaluation of our method for speculative decoding in multi-target scenarios:
 
