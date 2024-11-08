@@ -63,19 +63,19 @@ The table below summarizes the performance of various methods on the MT-Bench da
 | **Hydra [3]**               | 2.14×              | 2.70            | ✖️                   | ✖️              | 2.36×              | 4.01            | ✖️                   | ✖️              |
 | Hydra (No Attention Tree)   | 1.78×              | 2.65            | ✖️                   | ✖️              | 2.03×              | 3.11            | ✖️                   | ✖️              |
 | SFT + SD                    | 1.19×              | 3.19            | 1.21×               | 3.05            | 1.16×              | 3.44            | 1.10×               | 3.16            |
-| **SFT + SD (AdaptAT)**          | 1.68×              | 4.68            | 1.64×               | 4.59            | 1.33×              | 4.16            | 1.54×               | 4.15            |
+| **SFT + SD (Attention Tree)**          | 1.68×              | 4.68            | 1.64×               | 4.59            | 1.33×              | 4.16            | 1.54×               | 4.15            |
 | SFT + EarlyExit L6 + SD     | 0.98×              | 1.51            | 1.00×               | 1.51            | 0.96×              | 1.52            | 1.03×               | 1.51            |
-| **SFT + EarlyExit L6 + SD (AdaptAT)** | 1.19×         | 2.51            | 1.18×               | 2.52            | 1.20×              | 2.41            | 1.15×               | 2.41            |
+| **SFT + EarlyExit L6 + SD (Attention Tree)** | 1.19×         | 2.51            | 1.18×               | 2.52            | 1.20×              | 2.41            | 1.15×               | 2.41            |
 | SFT + EarlyExit L9 + SD     | 1.08×              | 1.99            | 1.05×               | 1.98            | 0.99×              | 2.04             | 1.12×               | 2.04            |
-| **SFT + EarlyExit L9 + SD (AdaptAT)** | 1.36×              | 3.44            | 1.43×               | 3.43            | 1.11×              | 3.17            | 1.23×               | 3.17            |
+| **SFT + EarlyExit L9 + SD (Attention Tree)** | 1.36×              | 3.44            | 1.43×               | 3.43            | 1.11×              | 3.17            | 1.23×               | 3.17            |
 | SoFT L6 + SD                | 1.38×              | 2.43            | 1.38×               | 2.40            | 1.30×              | 2.53            | 1.35×               | 2.87            |
-| **SoFT L6 + SD (AdaptAT)**      | 1.99×              | 4.08            | 1.95×               | 4.08            | 1.86×              | 3.73            | 1.74×               | 3.70            |
+| **SoFT L6 + SD (Attention Tree)**      | 1.99×              | 4.08            | 1.95×               | 4.08            | 1.86×              | 3.73            | 1.74×               | 3.70            |
 | SoFT L9 + SD                | 1.16×              | 3.00            | 1.31×               | 2.78            | 1.26×              | 3.05           | 1.32×               | 2.87            |
-| **SoFT L9 + SD (AdaptAT)**      | 1.84×              | 4.45            | 1.79×               | 4.42            | 1.52×              | 3.89            | 1.68×               | 4.01            |
+| **SoFT L9 + SD (Attention Tree)**      | 1.84×              | 4.45            | 1.79×               | 4.42            | 1.52×              | 3.89            | 1.68×               | 4.01            |
 | SoFT L12 + SD                | 1.17×              | 3.11           | 1.23×               | 3.01            | 1.07×              | 3.22           | 1.20×               | 3.17            |
-| **SoFT L12 + SD (AdaptAT)**      | 1.63×              | 4.61            | 1.62×               | 4.59            | 1.44×              | 4.12            | 1.58×               | 4.23            |
+| **SoFT L12 + SD (Attention Tree)**      | 1.63×              | 4.61            | 1.62×               | 4.59            | 1.44×              | 4.12            | 1.58×               | 4.23            |
 | SoFT + S2D (Ours)           | 1.34×              | 2.86            | 1.38×               | 2.76            | 1.27×              | 3.01            | 1.38×               | 2.89            |
-| **SoFT + S2D (AdaptAT)**        | 2.00×              | 4.11            | 1.93×               | 4.11            | 1.84x                 | 3.77              | 1.77x                  | 3.79              |
+| **SoFT + S2D (Attention Tree)**        | 2.00×              | 4.11            | 1.93×               | 4.11            | 1.84x                 | 3.77              | 1.77x                  | 3.79              |
 
 
 ***We kindly ask the reviewer to reconsider their score based on the clarifications and additional evidence provided, which highlight the scalability, practicality, and robust performance of our method.***
