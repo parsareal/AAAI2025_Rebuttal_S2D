@@ -1,3 +1,5 @@
+Thank you for your thoughtful and constructive feedback. We appreciate your recognition of the novelty of our approach and the clarity of our presentation. Below, we address each of your concerns in detail.
+
 **1. Target-Dependent Baselines on Larger Models**
 
 Thank you for pointing out the need for additional comparisons with target-dependent baselines on larger models. We aimed to provide a fair comparison in Table 1 by focusing on results from target-dependent approaches, such as Eagle, on a single target model (Vicuna 7B). This was because Eagle’s draft model, trained specifically for Vicuna 7B, cannot generalize to other target models like Vicuna 13B or LLaMA2 Chat 70B due to its inherent target dependence.
