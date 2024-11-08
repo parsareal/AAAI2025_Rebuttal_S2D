@@ -8,7 +8,7 @@ To address this concern, we will revise the text to make these implications clea
 
 Regarding the abstract and introduction, we agree that emphasizing the “one draft model for different target models of varying sizes” is crucial. We will revise these sections to ensure that our multi-target focus is explicitly stated and its practical implications are highlighted.
 
-**2. Practical Need for Multi-Target Handling**
+## **2. Practical Need for Multi-Target Handling**
 
 We appreciate the reviewer’s skepticism about the necessity of handling multiple target models. While it is true that many real-world deployments focus on a single large language model (LLM), we believe the multi-target scenario is becoming increasingly relevant due to the following considerations:
 
@@ -24,7 +24,7 @@ Recent research (e.g., FLEXTRON: Many-in-One Flexible Large Language Model [1]) 
 ***Efficiency of a Single Draft Model:***
 As shown in Table 6 (Appendix), training a separate draft model for each target incurs substantial training and memory costs, especially for larger target models. In contrast, our SoFT draft model is trained once and reused across all targets, offering significant efficiency gains without compromising accuracy or speed.
 
-**3. Motivation for Multi-Scale Targets**
+## **3. Motivation for Multi-Scale Targets**
 The reviewer raises a valid point about the perceived rarity of switching between significantly different target model sizes (e.g., LLaMA-70B to LLaMA-13B). However, we argue that such scenarios are not uncommon in the following contexts:
 
 ***Cost-Conscious Deployments:***
@@ -34,7 +34,7 @@ Organizations often switch between smaller and larger models based on task compl
 Developers and researchers often experiment with a variety of model sizes to balance accuracy, latency, and compute requirements. Our single draft model simplifies this workflow by providing a consistent speculative decoding mechanism across all target sizes.
 While specific applications may favor model switching within the same size class (e.g., LLaMA-13B to CodeLLaMA-13B), our method is compatible with such setups as well. Moreover, it addresses the broader need for flexibility across both similar and varied model sizes.
 
-**4. Addressing the Preference for Target-Specific Drafts**
+## **4. Addressing the Preference for Target-Specific Drafts**
 The reviewer suggests that training a specific draft model for each target might yield better accuracy and inference speed. While this is theoretically true, it comes at significant operational and computational costs:
 
 ***Training Overhead:***
@@ -44,7 +44,7 @@ Training a separate draft model for each target requires maintaining and optimiz
 Deploying multiple draft models increases storage, maintenance, and integration complexity. A single, reusable draft model like SoFT simplifies deployment pipelines while delivering competitive accuracy and speed.
 Our method balances accuracy, speed, and scalability, providing a practical solution for real-world scenarios where deployment simplicity and efficiency are prioritized.
 
-**5. Novelty and Contribution**
+## **5. Novelty and Contribution**
 
 We appreciate the reviewer’s assessment of our work as reasonable and solid. While we acknowledge that our contributions may not be groundbreaking, we believe they are significant in addressing practical challenges in speculative decoding:
 
@@ -58,7 +58,7 @@ Our adaptive draft strategy combines sorted fine-tuning with confidence-based me
 We conducted extensive experiments on MT-Bench and GSM8K, showcasing the efficacy of our method across diverse scenarios. Our ablation studies further validate the benefits of sorted speculative decoding.
 We believe these contributions offer meaningful advancements in speculative decoding and its application to multi-target scenarios.
 
-**6. Planned Revisions**
+## **6. Planned Revisions**
 
 Based on your feedback, we will:
 
