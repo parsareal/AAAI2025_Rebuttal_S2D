@@ -1,3 +1,5 @@
+Thank you for your detailed feedback and the opportunity to address your concerns. Below, we provide clarifications and highlight the key contributions of our work.
+
 ## **1. Multi-Target Compatibility of Speculative Decoding**
 
 The reviewer raises a concern that the original speculative decoding can already be applied to multiple target models with a single draft model. While this is technically true, the key contribution of our work lies in addressing the practical challenges associated with multi-target setups in speculative decoding. For example using a single draft model for different targets (with different sizes) has no adaptation mechanism between the single draft and the targets; however, in our solution the draft model contains some sub-models and we can adaptively switch between them to serve different targets properly. More specifically:
