@@ -1,6 +1,6 @@
 Thank you for your thoughtful and constructive feedback. We appreciate your recognition of the novelty of our approach and the clarity of our presentation. Below, we address each of your concerns in detail.
 
-**1. Target-Dependent Baselines on Larger Models**
+## **1. Target-Dependent Baselines on Larger Models**
 
 Thank you for pointing out the need for additional comparisons with target-dependent baselines on larger models. We aimed to provide a fair comparison in Table 1 by focusing on results from target-dependent approaches, such as Eagle, on a single target model (Vicuna 7B). This was because Eagle’s draft model, trained specifically for Vicuna 7B, cannot generalize to other target models like Vicuna 13B or LLaMA2 Chat 70B due to its inherent target dependence.
 
@@ -19,7 +19,7 @@ To address your concern, we conducted additional experiments with Eagle, trainin
 | SoFT + S2D (ours)            | 1.95×               | 2.36          |
 
 
-**2. Motivation for Using a Single Draft Model**
+## **2. Motivation for Using a Single Draft Model**
 
 We acknowledge the reviewer’s observation that deploying multiple draft models may seem feasible due to their relatively low cost compared to large target models. However, our approach of utilizing a single draft model provides distinct and critical advantages that address real-world scalability and efficiency challenges.
 
@@ -43,7 +43,7 @@ A single draft model simplifies deployment pipelines in multi-target scenarios, 
 The trend toward many-in-one model frameworks, such as FLEXTRON [ICML 2024], underscores the growing need for adaptable solutions capable of supporting multiple targets. Our SoFT + S2D approach anticipates and addresses this demand, providing an efficient and scalable alternative to traditional target-dependent methods.
 
 
-**3. Comparison with Target-Dependent Approaches and Integration of Attention Tree**
+## **3. Comparison with Target-Dependent Approaches and Integration of Attention Tree**
 
 As highlighted earlier, Eagle is a target-dependent approach that requires training drafts specific to each target model, significantly increasing memory and time costs during the training phase. This dependency becomes particularly burdensome when scaling to multiple target models, as each draft must be trained anew based on the target's outputs. In contrast, our SoFT draft model is target-agnostic, requiring a single training phase to serve multiple target models, thus reducing overall training complexity and deployment costs.
 
