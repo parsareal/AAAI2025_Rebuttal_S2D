@@ -1,6 +1,6 @@
 We appreciate the constructive feedback and the opportunity to clarify the contributions and motivations behind our work. Below, we address the reviewer’s comments in detail.
 
-##**1. Writing Improvements and Clarification of Table 1**
+## **1. Writing Improvements and Clarification of Table 1**
 
 Thank you for highlighting areas where the writing can be improved. We recognize that Table 1 and its associated paragraphs might not have been as clear as intended. The table demonstrates the comparative performance of different speculative decoding methods, including our Sorted Speculative Decoding (S2D) and self-speculative decoding approaches. Specifically, it highlights that self-speculative decoding methods—where intermediate sub-models of the target are used as drafts—suffer from significant accuracy degradation (15% lower on GSM8K) and slower decoding speed due to the latency of intermediate sub-models. This underscores the motivation for developing a separate draft model, which maintains high accuracy while achieving better speedups.
 
