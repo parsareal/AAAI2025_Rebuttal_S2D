@@ -1,6 +1,7 @@
 We appreciate the constructive feedback and the opportunity to clarify the contributions and motivations behind our work. Below, we address the reviewer’s comments in detail.
 
 **1. Writing Improvements and Clarification of Table 1**
+
 Thank you for highlighting areas where the writing can be improved. We recognize that Table 1 and its associated paragraphs might not have been as clear as intended. The table demonstrates the comparative performance of different speculative decoding methods, including our Sorted Speculative Decoding (S2D) and self-speculative decoding approaches. Specifically, it highlights that self-speculative decoding methods—where intermediate sub-models of the target are used as drafts—suffer from significant accuracy degradation (15% lower on GSM8K) and slower decoding speed due to the latency of intermediate sub-models. This underscores the motivation for developing a separate draft model, which maintains high accuracy while achieving better speedups.
 
 To address this concern, we will revise the text to make these implications clearer and explicitly explain the significance of the results in Table 1.
@@ -8,6 +9,7 @@ To address this concern, we will revise the text to make these implications clea
 Regarding the abstract and introduction, we agree that emphasizing the “one draft model for different target models of varying sizes” is crucial. We will revise these sections to ensure that our multi-target focus is explicitly stated and its practical implications are highlighted.
 
 **2. Practical Need for Multi-Target Handling**
+
 We appreciate the reviewer’s skepticism about the necessity of handling multiple target models. While it is true that many real-world deployments focus on a single large language model (LLM), we believe the multi-target scenario is becoming increasingly relevant due to the following considerations:
 
 ***Dynamic Deployment Needs:***
@@ -43,6 +45,7 @@ Deploying multiple draft models increases storage, maintenance, and integration 
 Our method balances accuracy, speed, and scalability, providing a practical solution for real-world scenarios where deployment simplicity and efficiency are prioritized.
 
 **5. Novelty and Contribution**
+
 We appreciate the reviewer’s assessment of our work as reasonable and solid. While we acknowledge that our contributions may not be groundbreaking, we believe they are significant in addressing practical challenges in speculative decoding:
 
 ***Unified Multi-Target Drafting:***
@@ -56,6 +59,7 @@ We conducted extensive experiments on MT-Bench and GSM8K, showcasing the efficac
 We believe these contributions offer meaningful advancements in speculative decoding and its application to multi-target scenarios.
 
 **6. Planned Revisions**
+
 Based on your feedback, we will:
 
 - Clarify the implications of Table 1 and its associated text.
